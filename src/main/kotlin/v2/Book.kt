@@ -5,7 +5,7 @@ import BookStatus
 class Book(
     val id: Long,
     val title: String,
-): Statusable<BookStatus>(BookStatus.READY_TO_RENT) {
+): StatusChangeable<BookStatus>(BookStatus.READY_TO_RENT) {
 
     // Some properties...
 

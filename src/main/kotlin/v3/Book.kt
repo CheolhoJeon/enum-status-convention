@@ -5,7 +5,7 @@ import BookStatus
 class Book(
     val id: Long,
     val title: String,
-): Statusable<BookStatus> {
+): StatusChangeable<BookStatus> {
 
     override var status: BookStatus = BookStatus.READY_TO_RENT
 

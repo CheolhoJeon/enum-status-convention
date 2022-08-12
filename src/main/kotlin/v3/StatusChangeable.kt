@@ -2,7 +2,7 @@ package v3
 
 import StateMachine
 
-interface Statusable<T : StateMachine> {
+interface StatusChangeable<T : StateMachine> {
 
     var status: T
 
