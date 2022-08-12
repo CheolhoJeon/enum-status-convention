@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="v2.BookTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2022-08-12T04:47:51" hostname="selectstarui-MacBookPro.local" time="0.006">
+  <properties/>
+  <testcase name="분실 상태에서 반납을 시도하면 예외를 던진다()" classname="v2.BookTest" time="0.002"/>
+  <testcase name="대여 대기 상태에서 반납을 시도하면 예외를 던진다()" classname="v2.BookTest" time="0.001"/>
+  <testcase name="대여 상태에서 또 다시 대여를 시도하면 예외를 던진다()" classname="v2.BookTest" time="0.0"/>
+  <testcase name="분실 상태에서 대여를 시도하면 예외를 던진다()" classname="v2.BookTest" time="0.0"/>
+  <testcase name="대여대기 상태의 책을 분실처리한다()" classname="v2.BookTest" time="0.001"/>
+  <testcase name="책을 대여한다()" classname="v2.BookTest" time="0.0"/>
+  <testcase name="책을 반납한다()" classname="v2.BookTest" time="0.0"/>
+  <testcase name="대여중 상태의 책을 분실처리한다()" classname="v2.BookTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
