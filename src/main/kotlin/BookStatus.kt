@@ -2,15 +2,17 @@ enum class BookStatus : StateMachine {
 
     // 대여 대기
     READY_TO_RENT {
-        override fun canBe(newStatus: StateMachine): Boolean = newStatus.let { it `is` RENTED || it `is` LOST }
+        override fun canBe(newStatus: StateMachine) = newStatus in listOf(RENTED, LOST)
     },
+
     // 대여중
     RENTED {
-        override fun canBe(newStatus: StateMachine): Boolean = newStatus.let { it `is` READY_TO_RENT || it `is` LOST }
+        override fun canBe(newStatus: StateMachine) = newStatus in listOf(READY_TO_RENT, LOST)
     },
+
     // 분실
     LOST {
-        override fun canBe(newStatus: StateMachine): Boolean = false
+        override fun canBe(newStatus: StateMachine) = false
     },
     ;
 
