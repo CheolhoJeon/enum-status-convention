@@ -12,19 +12,19 @@ class Book(
     fun rent() {
         /* Business Logic */
 
-        status become BookStatus.RENTED
+        status becomes BookStatus.RENTED
     }
 
     fun `return`() {
         /* Business Logic */
 
-        status become BookStatus.READY_TO_RENT
+        status becomes BookStatus.READY_TO_RENT
     }
 
     fun lose() {
         /* Business Logic */
 
-        status become BookStatus.LOST
+        status becomes BookStatus.LOST
     }
 
 }
